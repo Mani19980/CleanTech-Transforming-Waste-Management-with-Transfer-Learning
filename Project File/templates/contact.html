@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('technology') }}">Technology</a></li>
+      <li><a href="{{ url_for('benefits') }}">Benefits</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Have questions or want to collaborate? Reach out!</p>
+    <ul class="info-list">
+      <li>Email: <a href="mailto:maniroymullaqudi@gmail.com">maniroymullaqudi@gmail.com</a></li>
+      <li>Phone: +91 9030804174</li>
+    </ul>
+    <a class="back-link" href="{{ url_for('home') }}">← Back to Home</a>
+  </div>
+</body>
+</html>

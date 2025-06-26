@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('technology') }}">Technology</a></li>
+      <li><a href="{{ url_for('benefits') }}">Benefits</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Prediction Result</h1>
+    <div class="result">
+      <p><strong>Category:</strong> {{ prediction }}</p>
+      <!-- <p><strong>Detected Label:</strong> {{ raw_label }}</p> -->
+      <p><strong>Confidence:</strong> {{ confidence }}%</p>
+      <img src="{{ url_for('uploaded_file', filename=filename) }}" width="300" alt="Uploaded Image">
+    </div>
+    <a class="back-link" href="{{ url_for('home') }}">← Classify Another Image</a>
+  </div>
+</body>
+</html>

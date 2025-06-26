@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Benefits</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('technology') }}">Technology</a></li>
+      <li><a href="{{ url_for('benefits') }}">Benefits</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Benefits of Waste Classification</h1>
+    <ul class="info-list">
+      <li>Enhances recycling efficiency by automating sorting</li>
+      <li>Reduces manual labor and human error</li>
+      <li>Promotes environmental sustainability</li>
+      <li>Facilitates data-driven waste management decisions</li>
+    </ul>
+  </div>
+</body>
+</html>

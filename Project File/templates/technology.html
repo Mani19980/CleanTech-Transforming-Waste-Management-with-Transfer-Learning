@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Technology</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('technology') }}">Technology</a></li>
+      <li><a href="{{ url_for('benefits') }}">Benefits</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Technology Behind the Project</h1>
+    <ul class="info-list">
+      <li><strong>Model:</strong> Transfer learning using a pretrained CNN (e.g., MobileNet/VGG/Custom)</li>
+      <li><strong>Framework:</strong> scikit-learn (LogisticRegression) or TensorFlow/Keras</li>
+      <li><strong>Input Processing:</strong> Images resized to 224×224, normalized to [0,1]</li>
+      <li><strong>Classes:</strong> Biodegradable, Recyclable, Trash</li>
+      <li><strong>Stack:</strong> Python, Flask, HTML/CSS</li>
+    </ul>
+  </div>
+</body>
+</html>

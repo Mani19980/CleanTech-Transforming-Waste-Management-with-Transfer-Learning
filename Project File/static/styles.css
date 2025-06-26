@@ -1,0 +1,103 @@
+/* Base Reset & Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background-color: #2ecc71;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  margin: 0 20px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons & Forms */
+input[type="file"] {
+  display: block;
+  margin: 20px auto;
+}
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #27ae60;
+}
+
+/* Results */
+.result {
+  margin-top: 30px;
+  text-align: center;
+}
+.result img {
+  margin-top: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Lists */
+ul.info-list {
+  list-style: disc inside;
+  margin-top: 15px;
+}
+ul.info-list li {
+  margin-bottom: 10px;
+}
+
+/* Footer Link */
+.back-link {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  color: #2ecc71;
+  text-decoration: none;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
